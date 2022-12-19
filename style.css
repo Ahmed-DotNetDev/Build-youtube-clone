@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset the website */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Reset the font-size */
+html {
+    font-size: 10px;
+}
+
+/* Reset the font-family for body */
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* Reset all contents in the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0px 16px;
+}
+
+/* Styling all in left-section */
+.left-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Styling image in left-section */
+.left-section img {
+    width: 140px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+/* Styling all in middle-section */
+.middle-section {
+    display: flex;
+    align-items: center;
+    margin-left: -39;
+}
+
+/* Styling form in middle-section */
+.middle-section form {
+    display: flex;
+    width: 628px;
+    height: 40px;
+}
+
+/* Styling input text in middle-section */
+.middle-section input {
+    width: 100%;
+    border-radius: 18px 0px 0px 18px;
+    padding: 18px;
+    font-size: 1.5rem;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+}
+
+/* Styling basic button in middle-section */
+.middle-section button {
+    width: 50px;
+    border-radius: 0px 18px 18px 0px;
+    border: 1px solid #d3d3d3;
+    padding-top: 4px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+/* Styling hover of button in middle-section */
+.middle-section button:hover {
+    background-color: #c6c6c6;
+}
+
+/* Styling mic in middle-section */
+.middle-section .mic {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Styling hover in mic */
+.middle-section .mic:hover {
+    background-color: #c1c1c1;
+}
+
+/* Styling all in right-section */
+.right-section a {
+    padding-right: 13px;
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+}
+
+/* Styling hover all in right-section */
+.right-section a :hover {
+    background-color: #c6c6c6;
+    border-radius: 50%;
+}
+
+/* Styling Content area */
+.content-area {
+    display: flex;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Styling aside */
+aside {
+    height: 100%;
+    width: 250px;
+    background-color: white;
+    overflow-y: auto;
+}
+
+/* Styling nav */
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 15px 0px;
+    padding: 0px 10px;
+}
+
+/* Styling links */
+.nav-link {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    padding: 10px 16px;
+}
+
+/*Styling span */
+.nav-link span {
+    margin-left: 24px;
+    font-size: 1.7rem;
+    line-height: 2em;
+    font-weight: 400;
+    color: #030303;
+}
+
+/* Styling icon */
+.active {
+    background-color: #e5e5e5;
+}
+
+/* Styling span next to icon */
+#active-span {
+    font-weight: 400;
+}
+
+/* Navigation colomn */
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+/* Styling horizontal line between sections */
+hr {
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+    margin: 10px 0px;
+}
+
+/* Title of the place of channels */
+nav p {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: #606060;
+    font-size: 1.4rem;
+}
+
+/* Styling the icon of channel */
+.img-cover {
+    border-radius: 50%;
+    width: 26px;
+}
+
+/* Styling the main container for all videos */
+main {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #ddd;
+    padding: 35px 15px;
+    overflow-y: auto;
+}
