@@ -200,3 +200,11 @@ main {
     padding: 35px 15px;
     overflow-y: auto;
 }
+
+/* Styling the videos-container */
+.videos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
