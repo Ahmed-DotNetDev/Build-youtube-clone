@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Reset the website */
+/* Reset the website CSS */
 * {
     padding: 0;
     margin: 0;
@@ -35,8 +35,7 @@ header {
 
 /* Styling image in left-section */
 .left-section img {
-    width: 140px;
-    height: 40px;
+    width: 46%;
     padding-left: 10px;
 }
 
@@ -44,7 +43,7 @@ header {
 .middle-section {
     display: flex;
     align-items: center;
-    margin-left: -39;
+    margin-right: 9%;
 }
 
 /* Styling form in middle-section */
@@ -115,14 +114,14 @@ header {
 /* Styling Content area */
 .content-area {
     display: flex;
-    height: 100vh;
+    height: calc(100vh-56px);
     background-color: #f9f9f9;
 }
 
 /* Styling aside */
 aside {
     height: 100%;
-    width: 250px;
+    width: 280px;
     background-color: white;
     overflow-y: auto;
 }
@@ -148,9 +147,9 @@ nav {
 /*Styling span */
 .nav-link span {
     margin-left: 24px;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 2em;
-    font-weight: 400;
+    font-weight: 390;
     color: #030303;
 }
 
@@ -161,12 +160,12 @@ nav {
 
 /* Styling span next to icon */
 #active-span {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 /* Navigation colomn */
 .nav-link:hover {
-    background-color: rgba(0, 0, 0, .05);
+    background-color: rgba(0, 0, 0, .04);
 }
 
 /* Styling horizontal line between sections */
@@ -196,15 +195,146 @@ nav p {
 main {
     width: 100%;
     height: 100%;
-    border-top: 1px solid #ddd;
     padding: 35px 15px;
+    border-top: 1px solid #ddd;
     overflow-y: auto;
 }
 
 /* Styling the videos-container */
 .videos-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    flex-direction: row;
+}
+
+/* Styling the videos */
+.video {
+    width: 330px;
+    height: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Styling the thumbnails */
+.thumbnails {
+    width: 100%;
+    height: 187px;
+    margin-bottom: 20px;
+}
+
+/* Styling the image inside thumbnails */
+.thumbnails img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Styling the video details */
+
+.video-details {
+    display: flex;
+}
+
+/* Styling the image inside creator image */
+
+.creator-image img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+}
+
+/* Styling the title of video */
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling the link inside title of video */
+
+.title a {
+    text-decoration: none;
+}
+
+/* Styling the video title */
+
+.video-title {
+    color: rgb(3, 3, 3);
+    font-size: 1.6rem;
+    font-weight: 500;
+    max-width: 200px;
+    line-height: 2.2rem;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+
+/* Styling the video creator and the span that inside the title class */
+
+.video-creator,
+.title span {
+    font-weight: 400;
+    color: rgb(96, 96, 96);
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+
+/* Styling the hover on the video creator */
+
+.video-creator:hover {
+    color: black;
+}
+
+/* The Media query for responsive website */
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+    }
+
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+@media (max-width:641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+
+    .main-content h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px) {
+    body {
+        font-size: 10px;
+    }
 }
